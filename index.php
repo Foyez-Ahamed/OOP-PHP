@@ -5,12 +5,13 @@ class man {
 
 
     // properties //
-    public $name = 'Foyez Ahamed';
-    public $age = '30';
+    public $name;
 
-    public $mother_name = "Arafater Nesa";
+    public $age;
 
-    public $father_name = "Nurul Amin";
+    public $mother_name;
+
+    public $father_name;
 
 
     // method //
@@ -23,9 +24,17 @@ class man {
 
 $foyez = new man();
 
-echo "My mother name is" ." ". $foyez->mother_name . "<br>";
+$myname = $foyez->name = "Foyez Ahamed";
 
-// access method that means function //
-echo "This is Function that is method access" . " ". $foyez->mySelf();
+echo $myname . "<br>";
+
+
+
+
+$konok = new man();
+
+$myGfName = $konok->name = "Suraiya Zaman Konok";
+
+echo $myGfName;
 
 ?>
