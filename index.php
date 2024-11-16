@@ -35,7 +35,9 @@ $foyez->age = "26";
 $foyez->mother_name ="Arafater Nesa";
 $foyez->father_name ="Nurul Amin";
 
-echo $foyez->mySelf("Foyez Ahamed", "Arafater Nesa.");
+$myTotalInfo = $foyez->mySelf("Foyez Ahamed", "Arafater Nesa.");
+
+echo $myTotalInfo . "<br>";
 
 
 // create another object //
@@ -43,5 +45,11 @@ $konok = new man();
 
 $myGfName = $konok->name = "Suraiya Zaman Konok";
 
+$konokTotalInfo = $konok->mySelf('Suraiya Zaman Konok', 'Afroza Bulbul Swity.');
+
+echo $konokTotalInfo;
+
 
 ?>
+
+<!-- in this tutorial we learn how to create a class and how to create a object by using class, and how to access properties and methods  -->
